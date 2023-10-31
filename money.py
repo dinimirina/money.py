@@ -6,3 +6,8 @@ for key in per_cent:
 max_deposit = max(deposit)
 print(deposit)
 print ("Максимальная сумма, которую вы можете заработать — " + str(max_deposit))
+
+
+years = int(input('Введите количество лет: '))
+total_money = max_deposit * (1 + max(deposit) / 100) ** years
+print("Итоговая сумма после " + str(years) + " лет составит " + str(total_money))
